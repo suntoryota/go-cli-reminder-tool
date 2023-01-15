@@ -20,9 +20,9 @@ const (
 
 func main() {
 	if len(os.Args) < 3 {
-		fmt.Printf("Usage: %s <hh:mm> <text message\n>", os.Args[0])
+		fmt.Printf("Usage: %s <hh:mm> <text message>\n", os.Args[0])
+		os.Exit(1)
 	}
-	os.Exit(1)
 
 	now := time.Now()
 
